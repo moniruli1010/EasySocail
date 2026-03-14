@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+  --card: 220 38% 15%;
+  --card-foreground: 210 40% 98%;
+  --primary: 252 95% 65%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 215 28% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 215 28% 17%;
+  --muted-foreground: 217 10% 75%;
+  --border: 217 16% 25%;
+  --input: 217 16% 25%;
+  --ring: 252 95% 65%;
+}
+
+.light {
+  --background: 0 0% 100%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71% 4%;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+.glass-card {
+  @apply rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md shadow-xl;
+}
